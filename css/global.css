@@ -11,6 +11,7 @@
   --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   --radius: 6px;
   --form-width: 650px;
+  --logo-image: url(/images/furni-logo.png);
 }
 
 /* Base */
@@ -352,20 +353,20 @@ pre {
   }
 }
 
-/* Pasha styles – Brand-overrides, can split these out */
+/* Furni styles – Brand-overrides, can split these out */
 :root {
-  --accent-color: #ed5f74;
+  --accent-color: #2C475C;
   --headline-color: var(--accent-color);
 }
 
-.pasha-image-stack {
+.furni-image-stack {
   display: grid;
   grid-gap: 12px;
   grid-template-columns: auto auto;
 }
 
-.pasha-image-stack img,
-.pasha-image img {
+.furni-image-stack img,
+.furni-image img {
   border-radius: var(--radius);
   background-color: var(--gray-border);
   box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
@@ -374,24 +375,24 @@ pre {
   opacity: 0;
 }
 
-.pasha-image {
+.furni-image {
   text-align: center;
   margin-top: 20px;
 }
 
-.pasha-image img {
+.furni-image img {
   opacity: 1;
 }
 
-.pasha-image-stack img:nth-child(1) {
+.furni-image-stack img:nth-child(1) {
   transform: translate(30px, 15px);
   opacity: 1;
 }
-.pasha-image-stack img:nth-child(2) {
+.furni-image-stack img:nth-child(2) {
   transform: translate(-28px, 0px);
   opacity: 1;
 }
-.pasha-image-stack img:nth-child(3) {
+.furni-image-stack img:nth-child(3) {
   transform: translate(64px, -50px);
   opacity: 1;
 }
@@ -480,7 +481,7 @@ pre {
   min-width: 250px;
 }
 
-.container .pasha-image-stack {
+.container .furni-image-stack {
   margin-top: 20px;
 }
 
