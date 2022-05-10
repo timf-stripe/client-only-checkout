@@ -1,3 +1,9 @@
+<!-- 
+*
+* Section one: HTML header
+* This section provides basic metadata about the site and loads CSS files needed to render the page
+*
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,6 +18,12 @@
     <script src="https://js.stripe.com/v3/"></script>
   </head>
 
+<!--
+*
+* Section two: page body
+* This section defines the content of the page
+*
+-->
   <body>
     <div class="sr-root">
       <div class="sr-main" style="display: flex;">
@@ -24,12 +36,16 @@
             <h3>You've waited long enough.</h3>
             <p>It's time for comfort that never ends. The Infinity Chair will lift you to new heights.</p>
             <p>Let your worries melt away in the soft embrace of The Infinity Chair's Italian fine-grain leather.</p>
+
+            <!-- Update the data-price-id with the information from your Stripe product --> 
             <button
               data-checkout-mode="payment"
               data-price-id="price_1KxanaJVUdzEtBVamaxTdoz6"
             >
               Own it for just $3450
             </button>
+
+
           </section>
           <section class="container">
             <img src="images/infinity-chair.jpg"></img>
@@ -42,7 +58,7 @@
     <div class="banner">
       <span>
         This is a modified version of a
-        <a href="https://github.com/stripe-samples"> Stripe Sample </a> .
+        <a href="https://github.com/stripe-samples"> Stripe Sample</a>.
         <a
           href="https://github.com/stripe-samples/github-pages-stripe-checkout"
         >
@@ -51,10 +67,16 @@
       </span>
     </div>
 
+  <!--
+  *
+  * Section three: the Stripe script
+  * This section creates the clickable button to pass a session to Stripe Checkout
+  *  
+  -->
     <script>
       // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
       var PUBLISHABLE_KEY = 'pk_test_51K6ieaJVUdzEtBVaAO55gn52J9bjwzCZrQz6B93Fcj7faPe6jCLTxwxeu8LCuj2lloM8fNznU1TrNhrpRdEvc1xN00brPVvday';
-      // Replace with the domain you want your users to be redirected back to after payment
+
       var DOMAIN = location.href.replace(/[^/]*$/, '');
 
       if (PUBLISHABLE_KEY === 'pk_test_51K6ieaJVUdzEtBVaAO55gn52J9bjwzCZrQz6B93Fcj7faPe6jCLTxwxeu8LCuj2lloM8fNznU1TrNhrpRdEvc1xN00brPVvday') {
